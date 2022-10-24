@@ -1,0 +1,88 @@
+.Encabezado {
+    background-color: hsl(230, 89%, 18%);
+    padding: 30px; 
+    color: white;
+     
+    }
+
+.Barra {
+    background-color: #2D31FA;
+    padding: 30px;
+}
+
+
+.contenedor {
+    background-color: #5D8BF4;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.Principal {
+    background-color: #DFF6FF;
+    padding: 30px;
+   grid-column: 1/4;
+}
+
+.Lateral {
+    background-color: #051367;
+    padding: 30px;
+    grid-column: 4/5;
+}
+
+
+.piepagina {
+    background-color: #DFF6FF;
+    padding: 30px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}   
+.Barra ul{
+    list-style: none;
+
+}
+.Barra{
+    width: 1000px;
+    margin:30px auto;
+    background: #DFF6FF;
+}
+.Menu > li {
+    position: relative;
+    display:inline-block
+}
+.Menu > li > a{
+    display: block;
+    padding: 20px 20px;
+    color: #051367;
+    font-family: sans-serif;
+    text-decoration:none;
+}   
+.Menu li a:hover{
+color: #5D8BF4;
+}
+.subMenu{
+    background-color: #DFF6FF;
+    position: absolute;
+    width: 130%;
+    visibility:hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+.subMenu li a{
+    display: block;
+    padding: 15px;
+    color:#051367;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.Menu  li:hover .subMenu{
+     visibility: visible;
+     opacity: 1;
+}
